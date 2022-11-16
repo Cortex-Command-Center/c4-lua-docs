@@ -1,0 +1,36 @@
+# Software Recommendations
+
+This guide contains a few software recommendations for modding cortex command.
+
+## Sprite / Pixel editors
+* *Aseprite* +
+    This editor is the defacto best-of-breed sprite art tool. It is not free, but you can compile it yourself for free from the git repo, legally. +
+    *Links*: https://github.com/aseprite/aseprite[Git^] | https://store.steampowered.com/app/431730/Aseprite[Steam^] | https://www.aseprite.org[Website^] +
+    *Supports*: Windows, OSX, Linux
+
+* *Pixelorama* +
+    Avoid this for now, there's a bug in the palette system (probably a rounding error) that makes it require fixing colors in another tool, otherwise your sprites will be corrupted ingame. +
+    *Links*: https://github.com/Orama-Interactive/Pixelorama[Git^] | https://orama-interactive.itch.io/pixelorama[Itch.io^] +
+    *Supports*: Windows, OSX, Linux
+
+* *GraFX2* +
+    An autistic but somewhat fun sprite editor. Should support indexed colors afaik. +
+    *Links*: http://grafx2.chez.com/[Website^] +
+    *Supports*: Windows, Linux
+
+* *Gimp* +
+    A giant mess of a software but it's free and outrageously powerful. +
+    It does have an indexed mode for images. +
+    *Links*: https://www.gimp.org/[Website^] +
+    *Supports*: Windows, OSX, Linux
+
+## Audio editors
+* *Audacity* +
+    This editor is free and fairly powerful while still being somewhat easy to use. +
+    *Links*: https://github.com/audacity/audacity[Git^] | https://www.audacityteam.org/[Website^] +
+    *Supports*: Windows, OSX, Linux
+
+* *Sunvox* +
+    While it's mainly for music this can be used to generate sounds too. +
+    *Links*: https://warmplace.ru/soft/sunvox/[Website^] | https://sunvox.audio/[Community Site^] +
+    *Supports*: Windows, OSX, Linux
