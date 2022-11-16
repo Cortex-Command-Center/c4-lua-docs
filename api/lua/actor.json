@@ -1,0 +1,374 @@
+{
+    "Class": "Actor",
+    "Parameters": [
+      {
+        "Name": "BodyHitSound",
+        "Read": true,
+        "Write": true,
+        "Description": "Sound played when the Actor is struck or strikes something"
+      },
+      {
+        "Name": "AlarmSound",
+        "Read": true,
+        "Write": true,
+        "Description": "Sound played when the Actor is alarmed by something"
+      },
+      {
+        "Name": "PainSound",
+        "Read": true,
+        "Write": true,
+        "Description": "Sound played when the actor is hurt"
+      },
+      {
+        "Name": "DeathSound",
+        "Read": true,
+        "Write": true,
+        "Description": "Sound played when the actor is killed"
+      },
+      {
+        "Name": "DeviceSwitchSound",
+        "Read": true,
+        "Write": true,
+        "Description": "`TODO` Sound played when the actor switches devices?"
+      },
+      {
+        "Name": "ImpulseDamageThreshold",
+        "Read": true,
+        "Write": true,
+        "Description": "`TODO`"
+      },
+      {
+        "Name": "StableRecoveryDelay",
+        "Read": true,
+        "Write": true,
+        "Description": "`TODO`"
+      },
+      {
+        "Name": "Status",
+        "Read": true,
+        "Write": true,
+        "Description": "`TODO`"
+      },
+      {
+        "Name": "Health",
+        "Read": true,
+        "Write": true,
+        "Description": "Actor's current health"
+      },
+      {
+        "Name": "PrevHealth",
+        "Read": true,
+        "Write": false,
+        "Description": "Actor's health on the last frame"
+      },
+      {
+        "Name": "MaxHealth",
+        "Read": true,
+        "Write": true,
+        "Description": "Actor's max health"
+      },
+      {
+        "Name": "InventoryMass",
+        "Read": true,
+        "Write": false,
+        "Description": "How heavy the items this actor carries are"
+      },
+      {
+        "Name": "GoldCarried",
+        "Read": true,
+        "Write": true,
+        "Description": "`TODO`"
+      },
+      {
+        "Name": "AimRange",
+        "Read": true,
+        "Write": true,
+        "Description": "`TODO`"
+      },
+      {
+        "Name": "CPUPos",
+        "Read": true,
+        "Write": false,
+        "Description": "`TODO`"
+      },
+      {
+        "Name": "EyePos",
+        "Read": true,
+        "Write": false,
+        "Description": "`TODO`"
+      },
+      {
+        "Name": "HolsterOffset",
+        "Read": true,
+        "Write": true,
+        "Description": "`TODO`"
+      },
+      {
+        "Name": "ViewPoint",
+        "Read": true,
+        "Write": true,
+        "Description": "`TODO`"
+      },
+      {
+        "Name": "ItemInReach",
+        "Read": true,
+        "Write": true,
+        "Description": "`TODO`"
+      },
+      {
+        "Name": "SharpAimProgress",
+        "Read": true,
+        "Write": false,
+        "Description": "`TODO`"
+      },
+      {
+        "Name": "Height",
+        "Read": true,
+        "Write": false,
+        "Description": "`TODO`"
+      },
+      {
+        "Name": "AIMode",
+        "Read": true,
+        "Write": true,
+        "Description": "`TODO`"
+      },
+      {
+        "Name": "DeploymentID",
+        "Read": true,
+        "Write": false,
+        "Description": "`TODO`"
+      },
+      {
+        "Name": "PassengerSlots",
+        "Read": true,
+        "Write": true,
+        "Description": "`TODO`"
+      },
+      {
+        "Name": "Perceptiveness",
+        "Read": true,
+        "Write": true,
+        "Description": "`TODO`"
+      },
+      {
+        "Name": "CanRevealUnseen",
+        "Read": true,
+        "Write": true,
+        "Description": "`TODO`"
+      },
+      {
+        "Name": "InventorySize",
+        "Read": true,
+        "Write": false,
+        "Description": "`TODO`"
+      },
+      {
+        "Name": "MaxInventoryMass",
+        "Read": true,
+        "Write": false,
+        "Description": "`TODO`"
+      },
+      {
+        "Name": "MovePathSize",
+        "Read": true,
+        "Write": false,
+        "Description": "`TODO`"
+      },
+      {
+        "Name": "AimDistance",
+        "Read": true,
+        "Write": true,
+        "Description": "`TODO`"
+      },
+      {
+        "Name": "SightDistance",
+        "Read": true,
+        "Write": true,
+        "Description": "`TODO`"
+      }
+    ],
+    "Enums": [
+        {
+            "Name": "Status",
+            "Values": [
+		        "STABLE",
+		        "UNSTABLE",
+		        "INACTIVE",
+		        "DYING",
+		        "DEAD"
+            ]
+        },
+        {
+            "Name": "AIMode",
+            "Values": [
+		        "AIMODE_NONE",
+		        "AIMODE_SENTRY",
+		        "AIMODE_PATROL",
+		        "AIMODE_GOTO",
+		        "AIMODE_BRAINHUNT",
+		        "AIMODE_GOLDDIG",
+		        "AIMODE_RETURN",
+		        "AIMODE_STAY",
+		        "AIMODE_SCUTTLE",
+		        "AIMODE_DELIVER",
+		        "AIMODE_BOMB",
+		        "AIMODE_SQUAD",
+		        "AIMODE_COUNT"
+            ]
+        },
+        {
+            "Name": "ActionState",
+            "Values": [
+		        "MOVING",
+		        "MOVING_FAST",
+		        "FIRING",
+		        "ActionStateCount"
+            ]
+        },
+        {
+            "Name": "AimState",
+            "Values": [
+		        "AIMSTILL",
+		        "AIMUP",
+		        "AIMDOWN",
+		        "AimStateCount"
+            ]
+        },
+        {
+            "Name": "LateralMoveState",
+            "Values": [
+		        "LAT_STILL",
+		        "LAT_LEFT",
+		        "LAT_RIGHT"
+            ]
+        },
+        {
+            "Name": "ObstacleState",
+            "Values": [
+		        "PROCEEDING",
+		        "BACKSTEPPING",
+		        "DIGPAUSING",
+		        "JUMPING",
+		        "SOFTLANDING"
+            ]
+        },
+        {
+            "Name": "TeamBlockState",
+            "Values": [
+		        "NOTBLOCKED",
+		        "BLOCKED",
+		        "IGNORINGBLOCK",
+		        "FOLLOWWAIT"
+            ]
+        }
+    ],
+    "Functions": [
+        {
+            "Name": "prefab",
+            "Description": "",
+            "Params": [
+                {
+                    "Name": "",
+                    "Type": "",
+                    "Description": ""
+                }
+            ],
+            "Example": [
+                ""
+            ],
+            "Returns": {
+                "Type": "",
+                "Description": ""
+            }
+        },
+        {
+            "Name": "GetController",
+            "Description": "Gets this Actor's Controller.",
+            "Params": [],
+            "Example": [
+                "local controller = Actor:GetController()"
+            ],
+            "Returns": {
+                "Type": "Controller",
+                "Description": "A reference to this Actor's Controller."
+            }
+        },
+        {
+            "Name": "IsPlayerControlled",
+            "Description": "Tells whether a player is currently controlling this.",
+            "Params": [],
+            "Example": [
+                "if Actor:IsPlayerControlled() then",
+                "    -- do something",
+                "end"
+            ],
+            "Returns": {
+                "Type": "bool",
+                "Description": "Whether a player is controlling this."
+            }
+        },
+        {
+            "Name": "IsControllable",
+            "Description": "Tells wheter the player can switch control to this at all.",
+            "Params": [],
+            "Example": [
+                "if Actor:IsControllable() then",
+                "    -- do something",
+                "end"
+            ],
+            "Returns": {
+                "Type": "bool",
+                "Description": "Whether a player can control this at all."
+            }
+        },
+        {
+            "Name": "SetControllerMode",
+            "Description": "Sets this Actor's new Controller input mode.",
+            "Params": [
+                {
+                    "Name": "newMode",
+                    "Type": "Controller:InputMode",
+                    "Description": "The new input mode"
+                },
+                {
+                    "Name": "newPlayer",
+                    "Type": "number",
+                    "Note": "Needs to be between 1 and 4 inclusive",
+                    "Description": "The player which will control this if the input mode was set to player."
+                }
+            ],
+            "Example": [
+                "myActor:SetControllerMode(Controller:InputMode.CIM_AI, 2)"
+            ],
+            "Returns": {
+                "Type": "nil",
+                "Description": ""
+            }
+        },
+        {
+            "Name": "SwapControllerModes",
+            "Description": "Sets this Actor's Controller mode and gives back what it used to be.",
+            "Params": [
+                {
+                    "Name": "newMode",
+                    "Type": "Controller:InputMode",
+                    "Description": "The new mode to set to."
+                },
+                {
+                    "Name": "newPlayer",
+                    "Type": "number",
+                    "Note": "Needs to be between 1 and 4 inclusive",
+                    "Description": "The player which will control this if the input mode was set to player."
+                }
+            ],
+            "Example": [
+                "local oldMode = myActor:SwapControllerModes(Controller:InputMode.CIM_AI, 2)"
+            ],
+            "Returns": {
+                "Type": "nil",
+                "Description": ""
+            }
+        }
+    ]
+  }
