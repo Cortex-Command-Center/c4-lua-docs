@@ -2,4 +2,8 @@
 :revnumber: 1.0
 :toc:
 
-test to see if I remember adoc or not.
+
+* If you use visual studio code, you can find a syntax highlighting plugin
+    for cortex command ini in the market place. Just search for `c4ini`.
+
+* You can contribute tips to this by messaging people with write access.
