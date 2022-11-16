@@ -1,4 +1,5 @@
 # Software Recommendations
+:toc:
 
 This guide contains a few software recommendations for modding cortex command.
 
