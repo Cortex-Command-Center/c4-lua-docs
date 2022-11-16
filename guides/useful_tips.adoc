@@ -1,0 +1,5 @@
+= Useful random assorted tips
+:revnumber: 1.0
+:toc:
+
+test to see if I remember adoc or not.
