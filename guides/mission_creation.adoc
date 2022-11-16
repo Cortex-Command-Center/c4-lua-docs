@@ -4,25 +4,29 @@
 
 
 == What is a scene
-Making a map in cortex command is pretty simple though can be time consuming.
-There are three levels of scene you can make:
-Terrain::
-    Just a simple terrain, no debris, no structures. This is the first phase of making a map.
-Scene::
-    Terrain with debris, rocks, decorations, and maybe structures.
-Activity::
+Making a map in cortex command is pretty simple though can be time consuming. There are three components of every scene, though all but the first are optional (but at least the second is recommended):
+
+Terrain:::
+    Just a simple terrain, no debris, no structures. This is the first phase of making a map. This outlines the general form of it.
+Scene:::
+    Terrain with debris, rocks, decorations, and maybe structures. This is how you add extra detail to the scene.
+Activity:::
     A fully-scripted mission taking place on the terrain.
 
 == How to make a Terrain
 Terrain is the easiest thing to make and often the first step to making your new mission.
 
-You need some kind of pixel art tool that can work with palettes (see software suggestions document)
+You need some kind of pixel art tool that can work with palettes (see link:software_recommendations.adoc[software recommendations^])
 and a bit of time to doodle. You won't be using the normal palette file for this, instead you use the *Material* palette (Base.rte/palettemap.bmp).
 
 Here's the terrain file of MountZyss from the game:
 
 image::images/MountZyss.png[]
 
-Already you can no doubt see what you need to do. Air is the usual magenta, the dark magenta is the background, the browns different bits of dirt and stone. White snow.
+Already you can no doubt see what you need to do. Air is the usual magenta, the dark magenta is the background cave layers, the browns different bits of dirt and stone. White snow.
 
-Here's a rough run down:
+== How to make a Scene
+This just requires you to load the map into the scene editor ingame. From there you can go wild.
+
+== How to make a Mission
+TODO, but for now just reference existing ones in the game. You'll be using lua here.
