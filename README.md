@@ -11,4 +11,14 @@ Please use [asciidoctor][1] formatting for guides, the ini and lua api are a jso
 database of things. Eventually these will be generated into adoc as well or
 some other site generator thing.
 
+
+## Guides
+
+* **Content**
+    * [Map Making](guides/map_making.adoc)
+
+* **Misc**
+    * [Software Recommendations](guides/software_recommendations.adoc)
+    * [Useful Tips](guides/useful_tips.adoc)
+
 [1]:https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/
